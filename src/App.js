@@ -14,7 +14,11 @@ import {
 } from '@material-ui/core';
 import { PhotoCamera } from '@material-ui/icons';
 
+import useStyles from './style';
+
 const App = () => {
+  const classes = useStyles();
+
   return (
     <>
       <CssBaseline />
@@ -26,7 +30,7 @@ const App = () => {
       </AppBar>
 
       <main>
-        <div>
+        <div className={classes.container}>
           <Container maxWidth='sm'>
             <Typography
               variant='h2'
