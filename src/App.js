@@ -72,7 +72,7 @@ const App = () => {
 
         <Container className={classes.cardGrid} maxWidth='md'>
           <Grid container spacing={4}>
-            <Grid item>
+            <Grid item xs={12} sm={6} md={4}>
               <Card className={classes.card}>
                 <CardMedia
                   className={classes.cardMedia}
@@ -98,6 +98,15 @@ const App = () => {
           </Grid>
         </Container>
       </main>
+
+      <footer className={classes.footer}>
+        <Typography variant='h6' align='center' gutterBottom>
+          Footer
+        </Typography>
+        <Typography variant='subtitle1' align='center' color='textSecondary'>
+          Something here to give a purpose
+        </Typography>
+      </footer>
     </>
   );
 };
