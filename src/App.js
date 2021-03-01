@@ -24,7 +24,7 @@ const App = () => {
       <CssBaseline />
       <AppBar position='relative'>
         <Toolbar>
-          <PhotoCamera />
+          <PhotoCamera className={classes.icon} />
           <Typography variant='h6'>Photo Album</Typography>
         </Toolbar>
       </AppBar>
@@ -53,7 +53,7 @@ const App = () => {
               suscipit fuga repellendus praesentium!
             </Typography>
 
-            <div>
+            <div className={classes.button}>
               <Grid container spacing={2} justify='center'>
                 <Grid item>
                   <Button variant='contained' color='primary'>
