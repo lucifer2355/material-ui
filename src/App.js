@@ -11,12 +11,25 @@ import {
   Toolbar,
   Container
 } from '@material-ui/core';
+import { PhotoCamera } from '@material-ui/icons';
 
 const App = () => {
   return (
-    <div className='app'>
-      <Typography variant='h1'>Hello World</Typography>
-    </div>
+    <>
+      <CssBaseline />
+      <AppBar position='relative'>
+        <Toolbar>
+          <PhotoCamera />
+          <Typography variant='h6'>Photo Album</Typography>
+        </Toolbar>
+      </AppBar>
+
+      <main>
+        <div>
+          <Container maxWidth='sm'></Container>
+        </div>
+      </main>
+    </>
   );
 };
 
