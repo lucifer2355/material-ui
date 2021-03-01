@@ -26,7 +26,28 @@ const App = () => {
 
       <main>
         <div>
-          <Container maxWidth='sm'></Container>
+          <Container maxWidth='sm'>
+            <Typography
+              variant='h2'
+              align='center'
+              color='textPrimary'
+              gutterBottom
+            >
+              Photo Album
+            </Typography>
+
+            <Typography
+              variant='h5'
+              align='center'
+              color='textSecondary'
+              paragraph
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Repudiandae maiores eveniet fugit ullam odio aperiam neque itaque
+              impedit explicabo, labore totam officiis vitae minus nisi fugiat
+              suscipit fuga repellendus praesentium!
+            </Typography>
+          </Container>
         </div>
       </main>
     </>
